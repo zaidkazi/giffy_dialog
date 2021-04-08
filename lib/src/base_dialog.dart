@@ -232,7 +232,7 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog> with TickerProviderSt
     final isPortrait = MediaQuery.of(context).orientation == Orientation.portrait;
     return Dialog(
       elevation: 0.0,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.red,
       child: Container(
         transform: !_isDefaultEntryAnimation
             ? Matrix4.translationValues(
