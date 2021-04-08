@@ -49,6 +49,7 @@ class BaseGiffyDialog extends StatefulWidget {
     @required this.buttonRadius,
     @required this.entryAnimation,
     @required this.onCancelButtonPressed,
+    @required this.cardBackgroundColor,
     this.attributionUser,
   }) : super(key: key);
 
@@ -61,6 +62,7 @@ class BaseGiffyDialog extends StatefulWidget {
   final Text buttonOkText;
   final Text buttonCancelText;
   final Color buttonOkColor;
+  final Color cardBackgroundColor;
   final Color buttonCancelColor;
   final double buttonRadius;
   final double cornerRadius;
@@ -245,6 +247,7 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog> with TickerProviderSt
         width: MediaQuery.of(context).size.width * (isPortrait ? 0.8 : 0.6),
         child: Material(
           type: MaterialType.card,
+          color: widget.cardBackgroundColor,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(widget.cornerRadius)),
           elevation: Theme.of(context).dialogTheme.elevation ?? 24.0,
           child: isPortrait

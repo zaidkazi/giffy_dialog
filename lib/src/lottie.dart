@@ -138,6 +138,7 @@ class LottieGiffyDialog extends StatelessWidget {
       imageWidget: imageWidget,
       cornerRadius: cornerRadius,
       title: title,
+      cardBackgroundColor: cardBackgroundColor,
       attributionUser: attributionUser,
       description: description,
       onlyOkButton: onlyOkButton,
