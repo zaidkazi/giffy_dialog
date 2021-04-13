@@ -138,9 +138,6 @@ class _BaseGiffyDialogState extends State<BaseGiffyDialog> with TickerProviderSt
             child: imageWidget,
           ),
         ),
-        Center(
-            child: Text("Source: @${widget.attributionUser} / LottieFiles",
-                style: TextStyle(color: Colors.orange, fontSize: 9))),
         Expanded(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
